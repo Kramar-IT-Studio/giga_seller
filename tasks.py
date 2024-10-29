@@ -1,6 +1,7 @@
 """Tasks for managing the project."""
 
 import sys
+
 from invoke.context import Context
 from invoke.tasks import task
 
@@ -38,13 +39,13 @@ def deps_update(ctx: Context) -> None:
     try:
         print("1. Upgrading pip...")
         ctx.run("python -m pip install --upgrade pip", hide=True)
-        
+
         print("2. Installing/upgrading main dependencies...")
         ctx.run("python -m pip install --upgrade -r requirements.txt")
-        
+
         print("3. Installing/upgrading development dependencies...")
         ctx.run("python -m pip install --upgrade -r requirements-dev.txt")
-        
+
         print("\nDependencies updated successfully!")
         print("\nCurrent package versions:")
         ctx.run("pip list")
