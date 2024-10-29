@@ -1,0 +1,17 @@
+venv/
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
+*.db
+*.sqlite3
+*.sqlite
+*.db3
+*.db-shm
+*.db-wal
+*.db-journal
+
+.vscode/

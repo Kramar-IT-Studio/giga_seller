@@ -1,0 +1,5 @@
+python-telegram-bot==21.0.1
+python-dotenv==1.0.1
+langchain-community==0.0.27
+numpy>=1.26.0,<2.0.0
+pydantic-core>=2.25.0
