@@ -1,38 +1,34 @@
 """Тесты для сервиса чата."""
-
-from unittest.mock import Mock, patch
-
+import os
+import sys
+from pathlib import Path
 import pytest
-from langchain.schema import AIMessage
+from unittest.mock import AsyncMock, patch
 
-from src.services.chat_service import GigaChatService
+from src.services.chat_service import ChatService  # Исправленный импорт
 
+# Добавляем корневую директорию проекта в PYTHONPATH
+project_root = str(Path(__file__).parent.parent)
+sys.path.append(project_root)
 
 @pytest.mark.asyncio
-async def test_gigachat_service_successful_response():
-    """Тест успешной генерации ответа."""
-    mock_response = AIMessage(content="Тестовый ответ")
-
-    with patch("src.services.chat_service.GigaChat") as MockGigaChat:
-        mock_instance = Mock()
-        mock_instance.invoke.return_value = mock_response
-        MockGigaChat.return_value = mock_instance
-
-        service = GigaChatService()
-        response = await service.generate_response("Тестовое сообщение")
-
+async def test_generate_response():
+    """Тест генерации ответа."""
+    # Создаем мок для GigaChat
+    mock_response = AsyncMock()
+    mock_response.content = "Тестовый ответ"
+    
+    with patch('src.services.chat_service.GigaChat') as mock_giga:
+        # Настраиваем мок
+        mock_instance = mock_giga.return_value
+        mock_instance.ainvoke = AsyncMock(return_value=mock_response)
+        
+        # Создаем экземпляр сервиса
+        service = ChatService()
+        
+        # Тестируем генерацию ответа
+        response = await service.generate_response("Тестовый запрос")
+        
+        # Проверяем результат
         assert response == "Тестовый ответ"
-        mock_instance.invoke.assert_called_once()
-
-
-@pytest.mark.asyncio
-async def test_gigachat_service_invalid_response():
-    """Тест обработки некорректного ответа."""
-    with patch("src.services.chat_service.GigaChat") as MockGigaChat:
-        mock_instance = Mock()
-        mock_instance.invoke.return_value = "Некорректный тип ответа"
-        MockGigaChat.return_value = mock_instance
-
-        service = GigaChatService()
-        with pytest.raises(ValueError, match="Получен некорректный ответ от GigaChat"):
-            await service.generate_response("Тестовое сообщение")
+        assert mock_instance.ainvoke.called

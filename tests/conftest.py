@@ -14,6 +14,7 @@ sys.path.append(project_root)
 def mock_settings() -> Settings:
     """Provide test settings."""
     return Settings(
+        API_ENDPOINT="test_api_endpoint",
         TELEGRAM_TOKEN="test_telegram_token",
         GIGACHAT_TOKEN="test_gigachat_token"
     )

@@ -1,0 +1,36 @@
+2024-10-29 11:37:07,956 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8172738977:AAGn_b_IxRtccxadnIuPIZlvmSHLd-o1VsA/getMe "HTTP/1.1 200 OK"
+2024-10-29 11:37:08,034 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8172738977:AAGn_b_IxRtccxadnIuPIZlvmSHLd-o1VsA/deleteWebhook "HTTP/1.1 200 OK"
+2024-10-29 11:37:08,035 - telegram.ext.Application - INFO - Application started
+2024-10-29 11:37:15,781 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8172738977:AAGn_b_IxRtccxadnIuPIZlvmSHLd-o1VsA/getUpdates "HTTP/1.1 200 OK"
+2024-10-29 11:37:16,064 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8172738977:AAGn_b_IxRtccxadnIuPIZlvmSHLd-o1VsA/sendMessage "HTTP/1.1 200 OK"
+2024-10-29 11:37:20,211 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8172738977:AAGn_b_IxRtccxadnIuPIZlvmSHLd-o1VsA/getUpdates "HTTP/1.1 200 OK"
+2024-10-29 11:37:20,391 - httpx - INFO - HTTP Request: POST https://ngw.devices.sberbank.ru:9443/api/v2/oauth "HTTP/1.1 200 OK"
+2024-10-29 11:37:20,392 - gigachat.client - INFO - OAUTH UPDATE TOKEN
+2024-10-29 11:37:21,295 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-29 11:37:21,296 - src.bot.message_handler - INFO - Выбрана модель: Сяоми
+2024-10-29 11:37:21,561 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8172738977:AAGn_b_IxRtccxadnIuPIZlvmSHLd-o1VsA/sendMessage "HTTP/1.1 200 OK"
+2024-10-29 11:37:30,314 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8172738977:AAGn_b_IxRtccxadnIuPIZlvmSHLd-o1VsA/getUpdates "HTTP/1.1 200 OK"
+2024-10-29 11:37:40,402 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8172738977:AAGn_b_IxRtccxadnIuPIZlvmSHLd-o1VsA/getUpdates "HTTP/1.1 200 OK"
+2024-10-29 11:37:42,401 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8172738977:AAGn_b_IxRtccxadnIuPIZlvmSHLd-o1VsA/getUpdates "HTTP/1.1 200 OK"
+2024-10-29 11:37:43,438 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-29 11:37:43,439 - src.bot.message_handler - INFO - Указаны характеристики: Розовый 111 гигов
+2024-10-29 11:37:43,726 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8172738977:AAGn_b_IxRtccxadnIuPIZlvmSHLd-o1VsA/sendMessage "HTTP/1.1 200 OK"
+2024-10-29 11:37:51,347 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8172738977:AAGn_b_IxRtccxadnIuPIZlvmSHLd-o1VsA/getUpdates "HTTP/1.1 200 OK"
+2024-10-29 11:37:52,299 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-29 11:37:52,302 - src.bot.message_handler - INFO - Указано имя клиента: Петька
+2024-10-29 11:37:52,649 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8172738977:AAGn_b_IxRtccxadnIuPIZlvmSHLd-o1VsA/sendMessage "HTTP/1.1 200 OK"
+2024-10-29 11:37:57,488 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8172738977:AAGn_b_IxRtccxadnIuPIZlvmSHLd-o1VsA/getUpdates "HTTP/1.1 200 OK"
+2024-10-29 11:37:58,512 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-29 11:37:58,513 - src.bot.message_handler - WARNING - Неверный формат телефона: 1252512521
+2024-10-29 11:37:58,898 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8172738977:AAGn_b_IxRtccxadnIuPIZlvmSHLd-o1VsA/sendMessage "HTTP/1.1 200 OK"
+2024-10-29 11:38:07,570 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8172738977:AAGn_b_IxRtccxadnIuPIZlvmSHLd-o1VsA/getUpdates "HTTP/1.1 200 OK"
+2024-10-29 11:38:17,652 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8172738977:AAGn_b_IxRtccxadnIuPIZlvmSHLd-o1VsA/getUpdates "HTTP/1.1 200 OK"
+2024-10-29 11:38:27,738 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8172738977:AAGn_b_IxRtccxadnIuPIZlvmSHLd-o1VsA/getUpdates "HTTP/1.1 200 OK"
+2024-10-29 11:38:37,835 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8172738977:AAGn_b_IxRtccxadnIuPIZlvmSHLd-o1VsA/getUpdates "HTTP/1.1 200 OK"
+2024-10-29 11:38:47,916 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8172738977:AAGn_b_IxRtccxadnIuPIZlvmSHLd-o1VsA/getUpdates "HTTP/1.1 200 OK"
+2024-10-29 11:38:52,201 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8172738977:AAGn_b_IxRtccxadnIuPIZlvmSHLd-o1VsA/getUpdates "HTTP/1.1 200 OK"
+2024-10-29 11:38:52,202 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2024-10-29 11:38:52,202 - telegram.ext.Application - INFO - Application.stop() complete
+2024-10-29 11:40:54,089 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8172738977:AAGn_b_IxRtccxadnIuPIZlvmSHLd-o1VsA/getMe "HTTP/1.1 200 OK"
+2024-10-29 11:40:54,171 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8172738977:AAGn_b_IxRtccxadnIuPIZlvmSHLd-o1VsA/deleteWebhook "HTTP/1.1 200 OK"
+2024-10-29 11:40:54,173 - telegram.ext.Application - INFO - Application started
